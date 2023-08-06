@@ -1,0 +1,16 @@
+﻿@model PieListViewModel;
+    <h1>@Model.CurrentCategory</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var pie in Model.Pies)
+        {
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="@pie.ImageThumbnailUrl" alt="@pie.Name">
+                    <div class="card-body pie-button">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
