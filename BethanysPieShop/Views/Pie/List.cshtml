@@ -7,8 +7,11 @@
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="@pie.ImageThumbnailUrl" alt="@pie.Name">
                     <div class="card-body pie-button">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">
+                        <a class="pie-link" asp-controller="Pie" asp-action="Details" asp-route-id="@pie.PieId">@pie.Name   </a>
+                            </h5>
+                        <p class="card-text">@pie.ShortDescription</p>
+                        <div>@pie.Price</div>
                     </div>
                 </div>
             </div>
